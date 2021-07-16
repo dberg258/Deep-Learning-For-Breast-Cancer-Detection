@@ -1,5 +1,6 @@
 # Detection of Lymph Node Metastases in Women With Breast Cancer
 
+
 ## Overview
 
 This repository contains a solution to the [CAMELYON16](https://camelyon16.grand-challenge.org/Home/) challenge. The goal of this challenge is to develop an algorithm to detect cancer in digital slides of lymph node tissue.
@@ -38,12 +39,14 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 - They all involve transfer learning on top of Mobilnetv2.
 - I chose Mobilnetv2 because of its small size and efficientcy when training. Each model was trained on tens of thousands of images and therefore, speed was essential if I wanted to test with many different architiectures and datasets.
 
+<br></br>
 ### Base Model
 
 - The base model was built on top of Mobilnetv2 and addtionally included a GlobalAveragePooling2D layer, a Dropout(.2) layer and a Dense layer.
 
 <p align="center"><img width="350" height="350" src="Images/base_model_architecture.png"></p>
 
+<br></br>
 ### Base Model + Data Augmentation
 
 - Includes a data augmentation layer on top of the base model.
@@ -53,10 +56,12 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
         tf.keras.layers.experimental.preprocessing.RandomRotation(0.25)
       ])     
 
+<br></br>
 ### Fine-tuned Base Model
 
 - The top 10 layers of mobilnetv2 within my best base model are set to trainable.
 
+<br></br>
 ### 2-Zoom Model
 
 - Takes as input two 299X299 patches at different resolutions.
@@ -67,7 +72,7 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
     <img width="250" height="250" src="Images/tissue_slide_high_res.png">
 </p>
 
-- Architecture:
+- Each patch is fed to a base model (from above) and the results are then concatenated and passed to a single node dense layer.
 
 <p align="center">
     <img  src="Images/2zoom_architecture.png">
