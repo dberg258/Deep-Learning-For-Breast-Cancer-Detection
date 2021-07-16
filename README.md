@@ -1,8 +1,21 @@
-## Welcome to GitHub Pages
+# Detection of Lymph Node Metastases in Women With Breast Cancer
 
-You can use the [editor on GitHub](https://github.com/dberg258/Deep-Learning-For-Breast-Cancer-Detection/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Overview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This repository cointains a solution to the [CAMELYON16](https://camelyon16.grand-challenge.org/Home/) challenge. The goal of this challenge was to develop an algorithm to detect cancer in digital slides of lymph node tissue.
+
+## Motivation
+
+To detect the presence of cancer on a slide containing lymph node tissue, a pathologist must spend a greta deal of time analyzing the specifem under a microsope. This task is time consuming and subject to human error. With advancments in deep learning, an automted solution could be developed to analyze slides more effciently and objectivley. 
+
+## Medical Background
+
+![Image](https://grand-challenge-public-prod.s3.amazonaws.com/f/challenge/65/5ec25408-41fb-4075-a95f-4e855caee0c3/lymphNode.png)
+
+Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon). Lymph nodes are small glands that filter lymph, the fluid that circulates through the lymphatic system. The lymph nodes in the underarm are the first place breast cancer is likely to spread. Metastatic involvement of lymph nodes is one of the most important prognostic variables in breast cancer. 
+
+
+
 
 ### Markdown
 
@@ -26,12 +39,5 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dberg258/Deep-Learning-For-Breast-Cancer-Detection/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
