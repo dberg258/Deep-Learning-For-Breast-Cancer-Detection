@@ -34,8 +34,15 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ## Models
 
+- All of the models in this repository are convolutional neural networks built using Tensorflow. 
+- They all involve transfer learning on top of Mobilnetv2
+- I chose Mobilnetv2 because of its small size and efficientcy when training. Each model was trained on tens of thousands of images and therefore, speed was the most important factor, considering that I wanted to test with many different architiectures and datasets.
+
 ### Base Model
-The implementation in this repository uses a convolutional neural network. It was built using tensorflow and was trained on top of Mobilenetv2.
+
+- The base model was built on top of Mobilnetv2
+- 
+
 
 
 
