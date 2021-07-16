@@ -84,11 +84,19 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 ## Results
 - The best performing model was the fined-tuned Mobilnetv2 model without data augmentation, trained on a dataset with a cancer threshold (X%) of 30%.
 - Below are two examples of how the model performed on an entire slide. 
-- In order to test an entire slide, the slide is divided into 299X299 patches, each patch is fed into the model, and the results from all of those patches are combined into a 2D heatmap. 
-- In the examples below, the image on the left is the ground truth and the image on the right is the model's prediction. The model performs well on the two slides below. 
+    - In order to test an entire slide, the slide is divided into 299X299 patches, each patch is fed into the model, and the results from all of those patches are combined into a 2D heatmap. 
+    - In the examples below, the image on the left is the ground truth and the image on the right is the model's prediction. 
 
 <p align="center"><img src="Images/best_model_prediction_2.png"></p>
 <p align="center"><img src="Images/best_model_prediction_1.png"></p>
+
+## Future Work
+
+- Build a custom model that does not use transfer learning and contains fewer papramters. 
+- Utilize the cloud to train with more data.
+- Attempt coloring data augmentations.
+
+## Files
 
 
 
