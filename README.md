@@ -41,12 +41,27 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 ### Base Model
 
 - The base model was built on top of Mobilnetv2 and addtionally included a GlobalAveragePooling2D layer, a Dropout(.2) layer and a Dense layer.
-- It was trained using early stopping on valiudation loss for 30 epochs.
-- It was trained on 3 datsets with X% values of 10, 30, and 50 percent.
 
 <p align="center"><img width="350" height="350" src="Images/base_model_architecture.png"></p>
 
+### Base Model + Data Augmentation
 
+- Includes a data augmentation layer on top of the base model.
+
+      data_augmentation = tf.keras.Sequential([ 
+        tf.keras.layers.experimental.preprocessing.RandomFlip(), 
+        tf.keras.layers.experimental.preprocessing.RandomRotation(0.25)
+      ])
+
+### Fine-tuned Base Model
+
+- The top 10 layers of mobilnetv2 within my best base model are set to trainable
+
+
+
+## Training
+- All models were trained using early stopping on valiudation loss for 30 epochs.
+- All models were trained on 3 datsets with X% values of 10, 30, and 50 percent.
 
 
 ### Example Slide 
