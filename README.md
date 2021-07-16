@@ -44,6 +44,8 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 - It was trained using early stopping on valiudation loss for 30 epochs.
 - It was trained on 3 datsets with X% values of 10, 30, and 50 percent.
 
+<p align="center"><img width="350" height="350" src="https://github.com/dberg258/Deep-Learning-For-Breast-Cancer-Detection/blob/main/Images/base_model_architecture.png"></p>
+
 
 
 
