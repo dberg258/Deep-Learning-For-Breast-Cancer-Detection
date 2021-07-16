@@ -21,22 +21,17 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ## Data Creation
 - A script extracts 299X299 patches from a given slide.
-<p align="center"><img src="/Images/full_slide.png"></p>
+<p align="center"><img width="350" height="350" src="/Images/tissue_slide_high_res.png"></p>
 
 -	The logic for extracting patches is as follows:
 
     1. Iterate through the slide in 299 pixel strides
     2. Extract a 299X299 patch
     3. If the patch is mostly grey, skip it
-    4. If the center 128X128 pixels are X% cancerous, save this patch in a “cancer” folder, otherwise, save in a “safe” folder
+    4. If the center 128X128 pixels are X% cancerous, label as cancerous, otherwise, label as safe
 
-- I created 3 datasets with X values of 10, 30, and 50 percent
+- I created 3 datasets with X values of 10, 30, and 50 percent.
 
-
-![Image](/Images/tissue_slide_high_res.png)
-![Image](/Images/tissue_slide_low_res.png)
-
-- 
 
 ## Implementation
 
