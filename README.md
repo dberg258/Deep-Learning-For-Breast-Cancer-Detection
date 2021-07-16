@@ -2,19 +2,17 @@
 
 ## Overview
 
-This repository cointains a solution to the [CAMELYON16](https://camelyon16.grand-challenge.org/Home/) challenge. The goal of this challenge was to develop an algorithm to detect cancer in digital slides of lymph node tissue.
+This repository contains a solution to the [CAMELYON16](https://camelyon16.grand-challenge.org/Home/) challenge. The goal of this challenge was to develop an algorithm to detect cancer in digital slides of lymph node tissue.
 
 ## Motivation
 
-To detect the presence of cancer on a slide containing lymph node tissue, a pathologist must spend a greta deal of time analyzing the specifem under a microsope. This task is time consuming and subject to human error. With advancments in deep learning, an automted solution could be developed to analyze slides more effciently and objectivley. 
+To detect the presence of cancer on a slide containing lymph node tissue, a pathologist must spend a great deal of time analyzing the specimen under a microscope. This task is time consuming and subject to human error. With advancements in deep learning, an automated solution could be developed to analyze slides more efficiently and objectively. 
 
 ## Medical Background
 
 ![Image](https://grand-challenge-public-prod.s3.amazonaws.com/f/challenge/65/5ec25408-41fb-4075-a95f-4e855caee0c3/lymphNode.png)
 
-Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon). Lymph nodes are small glands that filter lymph, the fluid that circulates through the lymphatic system. The lymph nodes in the underarm are the first place breast cancer is likely to spread. Metastatic involvement of lymph nodes is one of the most important prognostic variables in breast cancer. 
-
-
+Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon). Lymph nodes are small glands that filter lymph, the fluid that circulates through the lymphatic system. The lymph nodes in the underarm are the first place breast cancer is likely to spread. Analyzing the tissue of the lymph node can therefore be used to detect breast cancer[.](https://camelyon16.grand-challenge.org/Background/) 
 
 
 ### Markdown
