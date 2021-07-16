@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a solution to the [CAMELYON16](https://camelyon16.grand-challenge.org/Home/) challenge. The goal of this challenge was to develop an algorithm to detect cancer in digital slides of lymph node tissue.
+This repository contains a solution to the [CAMELYON16](https://camelyon16.grand-challenge.org/Home/) challenge. The goal of this challenge is to develop an algorithm to detect cancer in digital slides of lymph node tissue.
 
 ## Motivation
 
@@ -14,6 +14,12 @@ To detect the presence of cancer on a slide containing lymph node tissue, a path
 
 Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon). Lymph nodes are small glands that filter lymph, the fluid that circulates through the lymphatic system. The lymph nodes in the underarm are the first place breast cancer is likely to spread. Analyzing the tissue of the lymph node can therefore be used to detect breast cancer[.](https://camelyon16.grand-challenge.org/Background/) 
 
+
+## Implementation
+
+The implementation in this repository uses a convolutional neural network that was trained on top of Mobilenetv2.
+
+### Example Slide 
 
 ### Markdown
 
