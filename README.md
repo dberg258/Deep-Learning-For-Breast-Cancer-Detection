@@ -21,7 +21,7 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ## Data Creation
 - A script extracts 299X299 patches from a given slide.
-<p align="center"><img width="350" height="350" src="/Images/tissue_slide_high_res.png"></p>
+<p align="center"> <img width="350" height="350" src="/Images/tissue_slide_high_res.png"> </p>
 
 -	The logic for extracting patches is as follows:
 
