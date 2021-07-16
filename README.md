@@ -15,9 +15,19 @@ To detect the presence of cancer on a slide containing lymph node tissue, a path
 Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon). Lymph nodes are small glands that filter lymph, the fluid that circulates through the lymphatic system. The lymph nodes in the underarm are the first place breast cancer is likely to spread. Analyzing the tissue of the lymph node can therefore be used to detect breast cancer[.](https://camelyon16.grand-challenge.org/Background/) 
 
 
+## Data
+
+![](https://github.com/dberg258/Deep-Learning-For-Breast-Cancer-Detection/blob/main/Images/full_slide.png)
+
+- The data for the challenge consists of high resolution slides of tissue
+
+- 
+
 ## Implementation
 
-The implementation in this repository uses a convolutional neural network that was trained on top of Mobilenetv2.
+The implementation in this repository uses a convolutional neural network. It was built using tensorflow and was trained on top of Mobilenetv2.
+
+
 
 ### Example Slide 
 
