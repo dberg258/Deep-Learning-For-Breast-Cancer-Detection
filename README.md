@@ -27,14 +27,14 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
     1. Iterate through the slide in 299 pixel strides
     2. Extract a 299X299 patch
-    3. If the patch is mostly grey, skip it
+    3. If the patch is mostly grey, skip it (as it is likely a section of the slide that is not tissue)
     4. If the center 128X128 pixels are X% cancerous, label as cancerous, otherwise, label as safe
 
 - I created 3 datasets with X values of 10, 30, and 50 percent.
 
+## Models
 
-## Implementation
-
+### Base Model
 The implementation in this repository uses a convolutional neural network. It was built using tensorflow and was trained on top of Mobilenetv2.
 
 
