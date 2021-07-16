@@ -19,7 +19,10 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ![Image](https://github.com/dberg258/Deep-Learning-For-Breast-Cancer-Detection/blob/main/Images/full_slide.png)
 
-- The data for the challenge consists of high resolution slides of tissue
+- The data for the challenge consists of high resolution slides of tissue. An exmaple is shown above.
+
+![Image](https://github.com/dberg258/Deep-Learning-For-Breast-Cancer-Detection/blob/main/Images/tissue_slide_high_res.png)
+![Image](https://github.com/dberg258/Deep-Learning-For-Breast-Cancer-Detection/blob/main/Images/tissue_slide_low_res.png)
 
 - 
 
