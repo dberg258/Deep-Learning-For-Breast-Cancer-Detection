@@ -12,16 +12,16 @@ To detect the presence of cancer on a slide containing lymph node tissue, a path
 
 Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon). Lymph nodes are small glands that filter lymph, the fluid that circulates through the lymphatic system. The lymph nodes in the underarm are the first place breast cancer is likely to spread. Analyzing the tissue of the lymph node can therefore be used to detect breast cancer[.](https://camelyon16.grand-challenge.org/Background/) 
 
-<p align="center"><img src="/Images/lymph_nodes.png"></p>
+<p align="center"><img src="Images/lymph_nodes.png"></p>
 
 ## Data
 
 - The data for the challenge consists of high resolution slides of tissue. Some slides are as detailed as 100,000 X 100,000 pixels.
-<p align="center"><img src="/Images/full_slide.png"></p>
+<p align="center"><img src="Images/full_slide.png"></p>
 
 ## Data Creation
 - A script extracts 299X299 patches from a given slide.
-<p align="center"> <img width="350" height="350" src="/Images/tissue_slide_high_res.png"> </p>
+<p align="center"> <img width="350" height="350" src="Images/tissue_slide_high_res.png"> </p>
 
 -	The logic for extracting patches is as follows:
 
