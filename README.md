@@ -51,7 +51,7 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
       data_augmentation = tf.keras.Sequential([ 
         tf.keras.layers.experimental.preprocessing.RandomFlip(), 
         tf.keras.layers.experimental.preprocessing.RandomRotation(0.25)
-      ])
+      ])     
 
 ### Fine-tuned Base Model
 
@@ -63,9 +63,16 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 - Both patches have the same center, with the lower resolution patch (below on the left) covering more area. 
 
 <p align="center">
-    <img width="200" height="200" src="Images/tissue_slide_low_res.png">
-    <img width="200" height="200" src="Images/tissue_slide_high_res.png">
+    <img width="250" height="250" src="Images/tissue_slide_low_res.png">
+    <img width="250" height="250" src="Images/tissue_slide_high_res.png">
 </p>
+
+- Architecture:
+
+<p align="center">
+    <img  src="Images/2zoom_architecture.png">
+</p>
+
 
 ## Training
 - All models were trained using early stopping on valiudation loss for 30 epochs.
