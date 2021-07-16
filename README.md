@@ -55,9 +55,17 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ### Fine-tuned Base Model
 
-- The top 10 layers of mobilnetv2 within my best base model are set to trainable
+- The top 10 layers of mobilnetv2 within my best base model are set to trainable.
 
+### 2-Zoom Model
 
+- Takes as input two 299X299 patches at different resolutions.
+- Both patches have the same center, with the lower resolution patch (below on the left) covering more area. 
+
+<p align="center">
+    <img width="200" height="200" src="Images/tissue_slide_low_res.png">
+    <img width="200" height="200" src="Images/tissue_slide_high_res.png">
+</p>
 
 ## Training
 - All models were trained using early stopping on valiudation loss for 30 epochs.
