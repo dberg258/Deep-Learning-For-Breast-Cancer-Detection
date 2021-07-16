@@ -74,17 +74,23 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 - Each patch is fed to a base model (from above) and the results are then concatenated and passed to a single node dense layer.
 
-<p align="center">
-    <img  src="Images/2zoom_architecture.png">
-</p>
+<p align="center"><img  src="Images/2zoom_architecture.png"></p>
 
 
 ## Training
 - All models were trained using early stopping on valiudation loss for 30 epochs.
 - All models were trained on 3 datsets with X% values of 10, 30, and 50 percent.
 
+## Results
+- The best performing model was the fined-tuned Mobilnetv2 model without data augmentation, trained on a dataset with a cancer threshold (X%) of 30%.
+- Below are two examples of how the model performed on an entire slide. 
+- In order to test an entire slide, the slide is divided into 299X299 patches, each patch is fed into the model, and the results from all of those patches are combined into a 2D heatmap. 
+- In the examples below, the image on the left is the ground truth and the image on the right is the model's prediction. The model performs well on the two slides below. 
 
-### Example Slide 
+<p align="center"><img src="Images/best_model_prediction_2.png"></p>
+<p align="center"><img src="Images/best_model_prediction_1.png"></p>
+
+
 
 ### Markdown
 
