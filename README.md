@@ -1,6 +1,3 @@
-# Detection of Lymph Node Metastases in Women With Breast Cancer
-
-
 ## Overview
 
 This repository contains a solution to the [CAMELYON16](https://camelyon16.grand-challenge.org/Home/) challenge. The goal of this challenge is to develop an algorithm to detect cancer in digital slides of lymph node tissue.
