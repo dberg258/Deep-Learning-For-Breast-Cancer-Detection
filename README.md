@@ -34,12 +34,12 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 - All of the models in this repository are convolutional neural networks built using Tensorflow. 
 - They all involve transfer learning on top of Mobilnetv2.
-- I chose Mobilnetv2 because of its small size and efficientcy when training. Each model was trained on tens of thousands of images and therefore, speed was essential if I wanted to test with many different architiectures and datasets.
+- I chose Mobilnetv2 because of its small size and efficiency when training. Each model was trained on tens of thousands of images and therefore, speed was essential if I wanted to test with many different architectures and datasets.
 
 
 ### Base Model
 
-- The base model was built on top of Mobilnetv2 and addtionally included a GlobalAveragePooling2D layer, a Dropout(.2) layer and a Dense layer.
+- The base model was built on top of Mobilnetv2 and additionally included a GlobalAveragePooling2D layer, a Dropout(.2) layer and a Dense layer.
 
 <p align="center"><img width="350" height="350" src="Images/base_model_architecture.png"></p>
 
@@ -75,11 +75,11 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 
 ## Training
-- All models were trained using early stopping on valiudation loss for 30 epochs.
-- All models were trained on 3 datsets with X% values of 10, 30, and 50 percent.
+- All models were trained using early stopping on validation loss for 30 epochs.
+- All models were trained on 3 datasets with X% values of 10, 30, and 50 percent.
 
 ## Results
-- The best performing model was the fined-tuned Mobilnetv2 model without data augmentation, trained on a dataset with a cancer threshold (X%) of 30%.
+- The best performing model was the fined-tuned Mobilnetv2 model without data augmentation, trained on a dateset with a cancer threshold (X%) of 30%.
 - Below are two examples of how the model performed on an entire slide. 
     - In order to test an entire slide, the slide is divided into 299X299 patches, each patch is fed into the model, and the results from all of those patches are combined into a 2D heatmap. 
     - In the examples below, the image on the left is the ground truth and the image on the right is the model's prediction. 
@@ -89,13 +89,13 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ## Future Work
 
-- Build a custom model that does not use transfer learning and contains fewer papramters. 
+- Build a custom model that does not use transfer learning and contains fewer parameters. 
 - Utilize the cloud to train with more data.
 - Attempt coloring data augmentations.
 
 ## Files
 
 - main.ipynb
-    - Contains all of the code for data exploration, data creation, dataset creation, model building, model training, and model evaluation. It is full of comments, explanantions, and graphs/charts.
+    - Contains all of the code for data exploration, data creation, dataset creation, model building, model training, and model evaluation. It is full of comments, explanations, and graphs/charts.
 - /Demo/demo_script.ipynb
-    - Contains a script for evaluating an entire slide using my best model. Instructions are at the top of the file.
+    - Contains a script for evaluating an entire slide using the best model. Instructions are at the top of the file.
