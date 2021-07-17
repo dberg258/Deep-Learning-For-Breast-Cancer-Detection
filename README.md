@@ -95,29 +95,5 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ## Files
 
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-
-
+- main.ipynb: contains all of the code for data exploration, data creation, dataset creation, model building, model training, and model evaluation. It is full of comments, explanantions, and graphs/charts.
+- /Demo/demo_script.ipynb: contains a script for evaluating an entire slide using my best model. Instructions are at the top of the file.
