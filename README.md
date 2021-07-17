@@ -95,5 +95,7 @@ Lymph node metastases occur in most cancer types (e.g. breast, prostate, colon).
 
 ## Files
 
-- main.ipynb: contains all of the code for data exploration, data creation, dataset creation, model building, model training, and model evaluation. It is full of comments, explanantions, and graphs/charts.
-- /Demo/demo_script.ipynb: contains a script for evaluating an entire slide using my best model. Instructions are at the top of the file.
+- main.ipynb
+    - Contains all of the code for data exploration, data creation, dataset creation, model building, model training, and model evaluation. It is full of comments, explanantions, and graphs/charts.
+- /Demo/demo_script.ipynb
+    - Contains a script for evaluating an entire slide using my best model. Instructions are at the top of the file.
